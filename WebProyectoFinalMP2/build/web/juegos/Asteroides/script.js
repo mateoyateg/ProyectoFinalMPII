@@ -19,6 +19,8 @@ $(document).ready(inicio);
 $(document).keydown(capturaTeclado);
 
 function inicio(){
+        var nickJugador = prompt("Ingrese su nickname: ");
+        document.getElementsByName("nombreJugador").value = nickJugador;
 	var lienzo = $("#lienzo")[0];
 	var contexto = lienzo.getContext("2d");
 	var buffer = document.createElement("canvas");
@@ -153,12 +155,12 @@ function run(){
 		contextoBuffer.font = "bold 50px sans-serif";
 		contextoBuffer.fillText("GAME OVER", 180, 200);
 		contextoBuffer.fillText(parseInt(duracion/10)+" pts", 250, 250);
-                this.puntos = $('#hola');
-                this.puntos = parseInt(duracion/10);
-                console.log(this.puntos + " " + $("#hola")[0]);
+                document.getElementsByName("puntosAsteroides").value = parseInt(duracion/10);
 		contexto.clearRect(0,0,700,500);
 		contexto.drawImage(buffer, 0, 0);
 		$("button").css("display","inline");
+                
+                document.datosPartida.submit();
 		
 	}
 }
