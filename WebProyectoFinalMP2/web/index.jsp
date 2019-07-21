@@ -20,7 +20,7 @@
         <table id="banner">
             <tr>
                 <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos
-                <td> <button class="BotBanner" onclick="location.href = ''"> Puntuaciones</button></td>
+                <!--<td> <button class="BotBanner" onclick="location.href = ''"> Puntuaciones</button></td>-->
                 <td> <button class="BotBanner" onclick="location.href = '.../index.jsp  '"> Volver al inicio</button></td>
             </tr>
         </table>
