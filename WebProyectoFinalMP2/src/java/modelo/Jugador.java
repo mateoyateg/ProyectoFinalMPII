@@ -20,5 +20,14 @@ public class Jugador {
         puntos = Integer.parseInt(puntosJuego);
         
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getPuntos() {
+        return puntos;
+    }
+    
     
 }

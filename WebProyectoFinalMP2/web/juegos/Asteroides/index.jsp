@@ -1,3 +1,11 @@
+<%-- 
+    Document   : index
+    Created on : 21/07/2019, 05:29:51 PM
+    Author     : braya
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% String nombre = "Asteroides"; %>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -11,13 +19,17 @@
         <script src="script.js" language="JavaScript1.2"></script>
     </head>
     <body>
-
-        <table style="border-radius:5px; background-color: #28102A; color: #ffffff; font-family: 'Luckiest Guy', cursive; width:100%;">
+        
+        <table id="banner">
             <tr>
-                <td style="padding:10px;">La Universidad de los juegos</td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td> <button style="float:right; outline: none; border-radius:5px; padding:10px;" onclick=" location.href = ''"> Puntuaciones</button></td>
-                <td> <button style="float:right; outline: none; border-radius:5px; padding:10px;" onclick=" location.href = '../../'"> Volver al inicio</button></td>
+                <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos</td>
+                <td>
+                    <form name="puntajesForm" action="../../muestraPuntajes">
+                        <input type="hidden" name="nombreJuego" id="nombreJuego" value="<%=nombre%>">
+                        <input type="Submit" class="BotBanner" value="Puntuaciones"></button>
+                    </form>
+                </td>
+                <td> <button class="BotBanner" onclick="location.href = '../../index.jsp'"> Volver al inicio</button></td>
             </tr>
         </table>
 
@@ -53,10 +65,11 @@
                 Tu navegador no es compatible
             </audio> 
             <form action="../../recibeDatos" name="datosPartida">
-                <input type="hidden" value="Asteroides" id="nombreJuego" name="nombreJuego">
+                <input type="hidden" value="<%=nombre%>" id="nombreJuego" name="nombreJuego">
                 <input type="hidden" value="" id="nombreJugador" name="nombreJugador">
                 <input type="hidden" value="" name="puntos" id="puntos">
             </form>
         </section>
     </body>
 </html>
+

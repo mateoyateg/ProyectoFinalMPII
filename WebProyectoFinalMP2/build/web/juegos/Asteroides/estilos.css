@@ -50,3 +50,24 @@ button {
 #ship, #asteroid, #explosion {
 	display:none;
 }
+
+.titulo{
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#banner{
+    border-radius:5px; 
+    background-color: #28102A; 
+    color: #ffffff; 
+    font-family: 'Luckiest Guy', cursive; 
+    width:100%;
+}
+
+.BotBanner{
+
+    float:right; 
+    outline: none; 
+    border-radius:5px; 
+    padding:10px;
+
+}

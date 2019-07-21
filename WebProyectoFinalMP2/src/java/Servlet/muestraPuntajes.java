@@ -5,7 +5,6 @@
  */
 package Servlet;
 
-import DAO.BDModificaPuntuaciones;
 import DAO.BDTodaslasPuntuaciones;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author braya
  */
-@WebServlet(name = "recibeDatos", urlPatterns = {"/recibeDatos"})
-public class recibeDatos extends HttpServlet {
+@WebServlet(name = "muestraPuntajes", urlPatterns = {"/muestraPuntajes"})
+public class muestraPuntajes extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,45 +34,22 @@ public class recibeDatos extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-        BDModificaPuntuaciones modificar;
         BDTodaslasPuntuaciones puntajes;
         
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
+            
             String nombreJuego = request.getParameter("nombreJuego");
-            String nombreJugador = request.getParameter("nombreJugador");
-            String puntos = request.getParameter("puntos");
-            
-            //Modificar los puntos del usuario
-            
-            modificar = new BDModificaPuntuaciones(nombreJuego);
-            modificar.insertaDatos(nombreJugador, puntos);
-            
-            //Crear página con todos los puntajes
-            
-            puntajes = new BDTodaslasPuntuaciones(nombreJuego);
-            puntajes.creaObjetos();
-            
-      
+            /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet recibeDatos</title>");            
+            out.println("<title>Servlet muestraPuntajes</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet recibeDatos at " + request.getContextPath() + "</h1>");
-            out.println("<h2>Nombre del jugador: " + nombreJugador + "</h2>");
-            out.println("<h2>Puntos del jugador: " + puntos + "</h2>");
-            out.println("<h2>Nombre del juego: " + nombreJuego + "</h2>");
+            out.println("<h1>Servlet muestraPuntajes at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Estoy llegando al servlet"+" "+nombreJuego);
             out.println("</body>");
             out.println("</html>");
-            
-            //response.sendRedirect("../puntuaciones.jsp");
-            
-        } catch (Exception e){
-            
-            System.out.println("ERROR: "+e);
-            
         }
     }
 

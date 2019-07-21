@@ -21,7 +21,7 @@
             <tr>
                 <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos
                 <!--<td> <button class="BotBanner" onclick="location.href = ''"> Puntuaciones</button></td>-->
-                <td> <button class="BotBanner" onclick="location.href = '.../index.jsp  '"> Volver al inicio</button></td>
+                <td> <button class="BotBanner" onclick="location.href = ''"> Volver al inicio</button></td>
             </tr>
         </table>
 
@@ -30,7 +30,7 @@
 
         <table>
             <tr>
-                <td> <button class="botonAsteroides" onclick=" location.href = 'juegos/Asteroides/index.html'" id="escenario_1">Asteroides</button> </td>
+                <td> <button class="botonAsteroides" onclick=" location.href = 'juegos/Asteroides/index.jsp'" id="escenario_1">Asteroides</button> </td>
                 <td> <button class="botonLaLlorona" onclick=" location.href = 'juegos/LaLlorona/index.html'" id="escenario_1">La Llorona</button> </td>
                 <td> <button class="botonBomberman" onclick=" location.href = 'juegos/Bomberman2.0/index.html'" id="escenario_1">Bomberman 2.0</button> </td>
                 <td> <button class="boton2048" onclick=" location.href = 'juegos/2048/index.html'" id="escenario_1">2048</button> </td>    
