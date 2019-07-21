@@ -155,7 +155,7 @@ function run(){
 		contextoBuffer.font = "bold 50px sans-serif";
 		contextoBuffer.fillText("GAME OVER", 180, 200);
 		contextoBuffer.fillText(parseInt(duracion/10)+" pts", 250, 250);
-                document.getElementById("puntosAsteroides").value = parseInt(duracion/10);
+                document.getElementById("puntos").value = parseInt(duracion/10);
 		contexto.clearRect(0,0,700,500);
 		contexto.drawImage(buffer, 0, 0);
 		$("button").css("display","inline");

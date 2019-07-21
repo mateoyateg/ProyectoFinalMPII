@@ -5,8 +5,12 @@
  */
 package Servlet;
 
+import DAO.BDModificaPuntuaciones;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,10 +36,17 @@ public class recibeDatos extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        
+        BDModificaPuntuaciones modificar;
+        
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            String nombreJuego = request.getParameter("nombreJuego");
             String nombreJugador = request.getParameter("nombreJugador");
-            String puntosAsteroides = request.getParameter("puntosAsteroides");
+            String puntos = request.getParameter("puntos");
+            modificar = new BDModificaPuntuaciones(nombreJuego);
+            modificar.insertaDatos(nombreJugador, puntos);
+      
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -44,9 +55,15 @@ public class recibeDatos extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet recibeDatos at " + request.getContextPath() + "</h1>");
             out.println("<h2>Nombre del jugador: " + nombreJugador + "</h2>");
-            out.println("<h2>Puntos del jugador: " + puntosAsteroides + "</h2>");
+            out.println("<h2>Puntos del jugador: " + puntos + "</h2>");
+            out.println("<h2>Nombre del juego: " + nombreJuego + "</h2>");
             out.println("</body>");
             out.println("</html>");
+            
+        } catch (Exception e){
+            
+            System.out.println("ERROR: "+e);
+            
         }
     }
 
