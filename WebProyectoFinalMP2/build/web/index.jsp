@@ -17,12 +17,11 @@
 
     <body>
 
-        <table style="border-radius:5px; background-color: #28102A; color: #ffffff; font-family: 'Luckiest Guy', cursive; width:100%;">
+        <table id="banner">
             <tr>
-                <td style="padding:10px;">La Universidad de los juegos</td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td> <button style="float:right; outline: none; border-radius:5px; padding:10px;" onclick=" location.href = ''"> Puntuaciones</button></td>
-                <td> <button style="float:right; outline: none; border-radius:5px; padding:10px;" onclick=" location.href = ''"> Volver al inicio</button></td>
+                <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos
+                <td> <button class="BotBanner" onclick="location.href = ''"> Puntuaciones</button></td>
+                <td> <button class="BotBanner" onclick="location.href = '.../index.jsp  '"> Volver al inicio</button></td>
             </tr>
         </table>
 
@@ -41,6 +40,5 @@
         <h2>Universidad Distrital Francisco José de Caldas - Facultad de Ingeniería</h2>
         <h2>Modelos de Programación II - Profesor: Alejandro Daza</h2>
         <h3>Creado por: Brayan A. Paredes Sanchez, Juan M. Ostos Quiñones, Mateo Yate Gonzalez</h3>
-
     </body>
 </html>
