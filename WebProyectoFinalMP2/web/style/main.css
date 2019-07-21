@@ -25,43 +25,43 @@ h1, h2, h3 {
 }
 
 .botonAsteroides{
-  background-image:url("../juegos/Asteroides/imagenes/space1.png");
-  background-repeat:no-repeat;
-  background-size: auto;
-  height:168px;
-  background-position:center;
-  color: #ffffff;
-  
+    background-image:url("../juegos/Asteroides/imagenes/space1.png");
+    background-repeat:no-repeat;
+    background-size: auto;
+    height:168px;
+    background-position:center;
+    color: #ffffff;
+
 }
 
 .botonLaLlorona{
-  background-image:url("../juegos/LaLlorona/imagenes/fondo.png");
-  background-repeat:no-repeat;
-  background-size: auto; 
-  height:168px;
-  background-position:center;
-  color: #ffffff;
+    background-image:url("../juegos/LaLlorona/imagenes/fondo.png");
+    background-repeat:no-repeat;
+    background-size: auto; 
+    height:168px;
+    background-position:center;
+    color: #ffffff;
 }
 
 .botonBomberman{
-  background-image:url("../juegos/Bomberman2.0/imagenes/miniaturas/Bomberman.jpg");
-  background-repeat:no-repeat;
-  background-size: auto; 
-  height:168px;
-  background-position:center;
-  color: #000000;
+    background-image:url("../juegos/Bomberman2.0/imagenes/miniaturas/Bomberman.jpg");
+    background-repeat:no-repeat;
+    background-size: auto; 
+    height:168px;
+    background-position:center;
+    color: #000000;
 }
 
 .boton2048{
-  background-image:url("../juegos/2048/imagenes/2048.png");
-  background-repeat:no-repeat;
-  height:168px;
-  color: #ffffff;
-  background-position:center;
+    background-image:url("../juegos/2048/imagenes/2048.png");
+    background-repeat:no-repeat;
+    height:168px;
+    color: #ffffff;
+    background-position:center;
 }
 
 .titulo{
-  font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #banner{
@@ -73,13 +73,12 @@ h1, h2, h3 {
 }
 
 .BotBanner{
-    
+
     float:right; 
     outline: none; 
     border-radius:5px; 
     padding:10px;
-    
+
 }
 
-      
-      
+
