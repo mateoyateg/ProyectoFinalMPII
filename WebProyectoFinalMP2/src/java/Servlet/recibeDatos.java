@@ -6,7 +6,6 @@
 package Servlet;
 
 import DAO.BDModificaPuntuaciones;
-import DAO.BDTodaslasPuntuaciones;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;

@@ -24,14 +24,20 @@ AdministradorJuego.prototype.mantenerJugando = function(){
 
 //Terminar el juego al llegar a 2048
 AdministradorJuego.prototype.juegoTerminado = function(){
-    return this.perdio || (this.gano && !this.mantenerJugando);
     if (this.perdio) {
-      var $PUNTAJE = this.puntaje;
+        var $PUNTAJE = this.puntaje;
+        document.getElementById("puntos").value = $PUNTAJE;
+        console.log($PUNTAJE);
+        
+        document.datosPartida.submit();
     }
+    return this.perdio || (this.gano && !this.mantenerJugando);  
 };
 
 //Configura el juego
 AdministradorJuego.prototype.lanzador = function(){
+    var nombreJugador = prompt("Ingrese su nombre de jugador: ");
+    document.getElementById("nombreJugador").value = nombreJugador;
     this.cuadricula = new Cuadricula(this.tamano);
     this.puntaje =0;
     this.perdio = false;
