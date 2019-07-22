@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="juego.js"></script>
+    <style>
+        #banner{
+            border-radius:5px; 
+            background-color: #28102A; 
+            color: #ffffff; 
+            font-family: 'Luckiest Guy', cursive; 
+            width:100%;
+        }
+
+        .BotBanner{
+
+            float:right; 
+            outline: none; 
+            border-radius:5px; 
+            padding:10px;
+
+        }
+    </style>
+  </head>
+  
+  <body onload="inicializar();">
+      
+      <table id="banner">
+        <tr>
+            <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos</td>
+            <td>
+                <input type="Submit" class="BotBanner" form="formularioasteroides" value="Puntuaciones">
+            </td>
+            <td> <button class="BotBanner" onclick="location.href = '../../index.jsp'"> Volver al inicio</button></td>
+        </tr>
+    </table>
+      
+    <canvas id="canvas" width="555" height="660" style="border:2px solid #000000;"></canvas>
+  </body>
+</html>

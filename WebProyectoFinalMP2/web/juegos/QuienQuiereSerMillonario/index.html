@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+ 
+<head>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="estilos.css" media="screen">
+
+</head>
+
+<body background="" bgcolor="#f6b93b"  > 
+    
+    <table id="banner">
+        <tr>
+            <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos</td>
+            <td>
+                <input type="Submit" class="BotBanner" form="formularioasteroides" value="Puntuaciones">
+            </td>
+            <td> <button class="BotBanner" onclick="location.href = '../../index.jsp'"> Volver al inicio</button></td>
+        </tr>
+    </table>
+
+	<div class="principal">
+
+		<h1> Brain-Challenge </h1>
+		<br>
+	
+		<p class="dinero">$$0</p>
+		<br>
+		
+		<h2 class="numPregunta">Pregunta</h2>
+		<p class="pregunta"></p>
+		<br>
+		
+		<ul class="respuestas"></ul>
+		<br>
+
+		<ul class="publico"></ul>
+		<br>
+
+		
+		
+    	
+		
+		<button class="reiniciar">Jugar!</button>
+		
+		<div class="ePublico">
+			<canvas id="myCanvas" style="background: #f6b93b;"></canvas>
+		</div>		
+		
+		<div class="lineaDeVida">
+			<button class="cincuenta">50/50</button>
+			<button class="paseLibre">Pase Libre</button>
+			<button class="publico">Publico</button>
+		</div>
+
+		<br><br>
+
+	</div><!-- .main-body -->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
+

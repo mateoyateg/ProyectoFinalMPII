@@ -26,6 +26,12 @@
                 <td> <button class="botonBomberman" onclick=" location.href = 'juegos/Bomberman2.0/index.html'" id="escenario_1">Bomberman 2.0</button> </td>
                 <td> <button class="boton2048" onclick=" location.href = 'juegos/2048/index.html'" id="escenario_1">2048</button> </td>    
             </tr>
+            <tr>
+                <td> <button class="botonFairyGone" onclick=" location.href = 'juegos/FairyGone/index.html'" id="escenario_1">FairyGone</button> </td>    
+                <td> <button class="botonFlappyBird" onclick=" location.href = 'juegos/FlappyBird/index.html'" id="escenario_1">FlappyBird</button> </td>    
+                <td> <button class="botonBrainChallenge" onclick=" location.href = 'juegos/QuienQuiereSerMillonario/index.html'" id="escenario_1">Brain-Challenge</button> </td>    
+                <td> <button class="botonBreakout" onclick=" location.href = 'juegos/Breakout/index.html'" id="escenario_1">Breakout</button> </td>    
+            </tr>
         </table>
 
         <h2>Universidad Distrital Francisco José de Caldas - Facultad de Ingeniería</h2>
