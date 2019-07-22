@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/07/2019, 08:20:02 PM
+    Author     : braya
+*/
+
+body {
+    background-image: url("../fondos/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-color: #333;
+}
+
+td {
+    padding:20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    
+}
+
+.jugadorespuntos:hover {background-color: #646464;}
+
+table {
+    width:100%;
+}
+
+th {
+    width: 50%;
+    background-color: #e7d9d9;
+    color: black;
+    font-size: 50px;
+    padding: 20px;
+    
+}
+
+button {
+    width:100%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.botonAsteroides{
+    background-image:url("../juegos/Asteroides/imagenes/space1.png");
+    background-repeat:no-repeat;
+    background-size: auto;
+    height:168px;
+    background-position:center;
+    color: #ffffff;
+
+}
+
+.botonLaLlorona{
+    background-image:url("../juegos/LaLlorona/imagenes/fondo.png");
+    background-repeat:no-repeat;
+    background-size: auto; 
+    height:168px;
+    background-position:center;
+    color: #ffffff;
+}
+
+.botonBomberman{
+    background-image:url("../juegos/Bomberman2.0/imagenes/miniaturas/Bomberman.jpg");
+    background-repeat:no-repeat;
+    background-size: auto; 
+    height:168px;
+    background-position:center;
+    color: #000000;
+}
+
+.boton2048{
+    background-image:url("../juegos/2048/imagenes/2048.png");
+    background-repeat:no-repeat;
+    height:168px;
+    color: #ffffff;
+    background-position:center;
+}
+
+.titulo{
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#banner{
+    border-radius:5px; 
+    background-color: #28102A; 
+    color: #ffffff; 
+    font-family: 'Luckiest Guy', cursive; 
+    width:100%;
+}
+
+.BotBanner{
+
+    float:right; 
+    outline: none; 
+    border-radius:5px; 
+    padding:10px;
+
+}
+
+

@@ -24,10 +24,7 @@
             <tr>
                 <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos</td>
                 <td>
-                    <form name="puntajesForm" action="../../muestraPuntajes">
-                        <input type="hidden" name="nombreJuego" id="nombreJuego" value="<%=nombre%>">
-                        <input type="Submit" class="BotBanner" value="Puntuaciones"></button>
-                    </form>
+                    <input type="Submit" class="BotBanner" form="formularioasteroides" value="Puntuaciones">
                 </td>
                 <td> <button class="BotBanner" onclick="location.href = '../../index.jsp'"> Volver al inicio</button></td>
             </tr>
@@ -64,7 +61,7 @@
                 <source src="sonidos/explode.mp3" type="audio/mpeg">
                 Tu navegador no es compatible
             </audio> 
-            <form action="../../recibeDatos" name="datosPartida">
+            <form id="formularioasteroides" action="../../recibeDatos" name="datosPartida">
                 <input type="hidden" value="<%=nombre%>" id="nombreJuego" name="nombreJuego">
                 <input type="hidden" value="" id="nombreJugador" name="nombreJugador">
                 <input type="hidden" value="" name="puntos" id="puntos">

@@ -30,7 +30,7 @@ public class BDTodaslasPuntuaciones {
     
     public ArrayList creaObjetos() throws SQLException{
         
-        String strSQL = "SELECT * FROM " + nombre+";";
+        String strSQL = "SELECT * FROM " + nombre+" ORDER BY puntos desc;";
         PreparedStatement pstm = conexion.getConexion().prepareStatement(strSQL);
         ResultSet res = pstm.executeQuery();
         while(res.next()){

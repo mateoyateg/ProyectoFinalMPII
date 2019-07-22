@@ -17,15 +17,6 @@
 
     <body>
 
-        <table id="banner">
-            <tr>
-                <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos
-                <!--<td> <button class="BotBanner" onclick="location.href = ''"> Puntuaciones</button></td>-->
-                <td> <button class="BotBanner" onclick="location.href = ''"> Volver al inicio</button></td>
-            </tr>
-        </table>
-
-
         <h1 class="titulo">La universidad de los juegos ┌( ಠ_ಠ )┘</h1>
 
         <table>

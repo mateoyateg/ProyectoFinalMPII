@@ -46,23 +46,10 @@ public class recibeDatos extends HttpServlet {
             
             //Modificar los puntos del usuario
             
-            modificar = new BDModificaPuntuaciones(nombreJuego);
-            modificar.insertaDatos(nombreJugador, puntos);
-            
-            //Crear página con todos los puntajes
-      
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet recibeDatos</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet recibeDatos at " + request.getContextPath() + "</h1>");
-            out.println("<h2>Nombre del jugador: " + nombreJugador + "</h2>");
-            out.println("<h2>Puntos del jugador: " + puntos + "</h2>");
-            out.println("<h2>Nombre del juego: " + nombreJuego + "</h2>");
-            out.println("</body>");
-            out.println("</html>");
+            if(nombreJugador!="" && puntos!=""){
+                modificar = new BDModificaPuntuaciones(nombreJuego);
+                modificar.insertaDatos(nombreJugador, puntos);
+            }
             
             Cookie cokNombreJuego = new Cookie("nombreJuego", nombreJuego);
             cokNombreJuego.setPath("puntuaciones.jsp");
