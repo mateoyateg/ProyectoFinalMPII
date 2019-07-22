@@ -5,6 +5,8 @@ $(document).ready(inicio);
 $(document).keydown(capturaTeclado);
 
 function inicio(){
+        var nombreJugador = prompt("Ingrese su nombre de jugador: ");
+        document.getElementById("nombreJugador").value = nombreJugador;
 	jugando = true;
 	miCanvas = $("#mi_canvas")[0];
 	contexto = miCanvas.getContext("2d");
@@ -30,7 +32,7 @@ function inicio(){
     
     $("#iniciar").click(function(){	
 		if(jugando==false)
-			inicio();	
+                    inicio();	
 	});
 }
 
@@ -85,6 +87,10 @@ function run(){
 		contextoBuffer.fillText("try again", 550, 460);
 		contexto.clearRect(0,0,miCanvas.width,miCanvas.height);
 		contexto.drawImage(buffer, 0, 0);
+                document.getElementById("puntos").value = quica.puntos;
+                
+                document.datosPartida.submit();
+                
 	}
 	
 }

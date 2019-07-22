@@ -18,12 +18,13 @@
     </head>
     <body>
 
-        <table style="border-radius:5px; background-color: #28102A; color: #ffffff; font-family: 'Luckiest Guy', cursive; width:100%;">
+        <table id="banner">
             <tr>
-                <td style="padding:10px;">La Universidad de los juegos</td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td> <button style="float:right; outline: none; border-radius:5px; padding:10px;" onclick=" location.href = ''"> Puntuaciones</button></td>
-                <td> <button style="float:right; outline: none; border-radius:5px; padding:10px;" onclick=" location.href = '../../'"> Volver al inicio</button></td>
+                <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos</td>
+                <td>
+                    <input type="Submit" class="BotBanner" form="formulariollorona" value="Puntuaciones">
+                </td>
+                <td> <button class="BotBanner" onclick="location.href = '../../index.jsp'"> Volver al inicio</button></td>
             </tr>
         </table>
 
@@ -65,5 +66,11 @@
         <img id="sentado" src="imagenes/kika3.png"/>
         <img id="calaca_1" src="imagenes/calaca_child.png"/>
         <img id="calaca_2" src="imagenes/calaca_girl.png"/>
+        
+        <form id="formulariollorona" action="../../recibeDatos" name="datosPartida">
+            <input type="hidden" value="llorona" id="nombreJuego" name="nombreJuego">
+            <input type="hidden" value="" id="nombreJugador" name="nombreJugador">
+            <input type="hidden" value="" name="puntos" id="puntos">
+        </form>
     </body>
 </html>

@@ -668,3 +668,20 @@ h1.title {
   margin-top: 90px !important; }
 .mensaje-final .contenedor-botones {
   margin-top: 30px !important; } }
+
+#banner{
+    border-radius:5px; 
+    background-color: #28102A; 
+    color: #ffffff; 
+    font-family: 'Luckiest Guy', cursive; 
+    width:100%;
+}
+
+.BotBanner{
+
+    float:right; 
+    outline: none; 
+    border-radius:5px; 
+    padding:10px;
+
+}
