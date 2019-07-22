@@ -60,6 +60,38 @@ h1, h2, h3 {
     background-position:center;
 }
 
+.botonFairyGone{
+    background-image:url("../juegos/FairyGone/sprites/fondo4.png");
+    background-repeat:no-repeat;
+    height:168px;
+    color: #ffffff;
+    background-position:center;
+}
+
+.botonFlappyBird{
+    background-image:url("../juegos/FlappyBird/miniatura.jpg");
+    background-repeat:no-repeat;
+    height:168px;
+    color: #000000;
+    background-position:center;
+}
+
+.botonBrainChallenge{
+    background-image:url("../juegos/QuienQuiereSerMillonario/miniatura.png");
+    background-repeat:no-repeat;
+    height:168px;
+    color: #000000;
+    background-position:center;
+}
+
+.botonBreakout{
+    background-image:url("../juegos/Breakout/fondo.jpg");
+    background-repeat:no-repeat;
+    height:168px;
+    color: #ffffff;
+    background-position:center;
+}
+
 .titulo{
     font-family: 'Luckiest Guy', cursive;
 }
