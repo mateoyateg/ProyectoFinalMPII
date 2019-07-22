@@ -52,6 +52,8 @@ function inicializar(){
   canvas = document.getElementById('canvas');
   contexto = canvas.getContext('2d');
   cargarImagenes();
+  var nombreJugador = prompt("Ingrese su nombre de jugador: ");
+  document.getElementById("nombreJugador").value = nombreJugador;
 }
 
 function borrarCanvas(){
@@ -168,8 +170,11 @@ function puntuacion(){
 	}
 	
 	if(colision == true){
-		contexto.font = "60px impact";	
+            contexto.font = "60px impact";	
 	    contexto.fillText('JUEGO TERMINADO',40,150);
+            document.getElementById("puntos").value = nivel.puntuacion;
+
+        document.datosPartida.submit();
 	}
 }
 
