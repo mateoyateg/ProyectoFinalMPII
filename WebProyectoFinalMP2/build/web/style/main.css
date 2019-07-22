@@ -92,6 +92,14 @@ h1, h2, h3 {
     background-position:center;
 }
 
+.botonMarioJumper{
+    background-image:url("../juegos/MarioJumper/miniatura.jpg");
+    background-repeat:no-repeat;
+    height:168px;
+    color: #ffffff;
+    background-position:center;
+}
+
 .titulo{
     font-family: 'Luckiest Guy', cursive;
 }

@@ -32,6 +32,10 @@
                 <td> <button class="botonBrainChallenge" onclick=" location.href = 'juegos/QuienQuiereSerMillonario/index.html'" id="escenario_1">Brain-Challenge</button> </td>    
                 <td> <button class="botonBreakout" onclick=" location.href = 'juegos/Breakout/index.html'" id="escenario_1">Breakout</button> </td>    
             </tr>
+                <td> <button class="botonMarioJumper" onclick=" location.href = 'juegos/MarioJumper/juego1.html'" id="escenario_1">Mario Jumper</button> </td>
+            <tr>
+                
+            </tr>
         </table>
 
         <h2>Universidad Distrital Francisco José de Caldas - Facultad de Ingeniería</h2>

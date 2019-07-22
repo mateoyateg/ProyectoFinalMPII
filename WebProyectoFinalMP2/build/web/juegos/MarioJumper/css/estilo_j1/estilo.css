@@ -1,0 +1,30 @@
+body{
+   
+    background:url(../../img/img_j1/fondo.jpg) no-repeat fixed center center;
+        background-size: cover;
+    
+    
+}
+
+#bloque_juego { 
+	float: left;
+	width: 1000px; 
+	margin: 0 auto
+}
+
+#banner{
+    border-radius:5px; 
+    background-color: #28102A; 
+    color: #ffffff; 
+    font-family: 'Luckiest Guy', cursive; 
+    width:100%;
+}
+
+.BotBanner{
+
+    float:right; 
+    outline: none; 
+    border-radius:5px; 
+    padding:10px;
+
+}
