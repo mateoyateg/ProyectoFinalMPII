@@ -12,12 +12,12 @@ package modelo;
 public class Jugador {
     
     String nombre;
-    int puntos;
+    String puntos;
     
     public Jugador(String nombreJugador, String puntosJuego){
         
         nombre = nombreJugador;
-        puntos = Integer.parseInt(puntosJuego);
+        puntos = puntosJuego;
         
     }
 
@@ -25,7 +25,7 @@ public class Jugador {
         return nombre;
     }
 
-    public int getPuntos() {
+    public String getPuntos() {
         return puntos;
     }
     

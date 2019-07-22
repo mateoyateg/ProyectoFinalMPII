@@ -28,7 +28,7 @@ public class BDTodaslasPuntuaciones {
     
     }
     
-    public void creaObjetos() throws SQLException{
+    public ArrayList creaObjetos() throws SQLException{
         
         String strSQL = "SELECT * FROM " + nombre+";";
         PreparedStatement pstm = conexion.getConexion().prepareStatement(strSQL);
@@ -37,14 +37,6 @@ public class BDTodaslasPuntuaciones {
             jugadores.add(new Jugador(res.getString(1), res.getString(2)));
         }
         
-        muestraObjetos();
+        return jugadores;
     }
-    
-    public void muestraObjetos(){
-        
-        for(int i=0; i<jugadores.size(); i++){
-            System.out.println("Nombre: "+jugadores.get(i).getNombre()+" Puntos: "+jugadores.get(i).getPuntos());
-        }
-    }
- 
 }

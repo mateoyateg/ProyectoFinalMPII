@@ -4,7 +4,16 @@
     Author     : braya
 --%>
 
+<%@page import="java.util.ArrayList"%>
+<%@page import="modelo.Jugador"%>
+<%@page import="DAO.BDTodaslasPuntuaciones"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% Cookie[] cookies = request.getCookies(); %>
+<% String nombreJuego = cookies[0].getValue(); %>
+<% BDTodaslasPuntuaciones puntajes;%>
+<% puntajes = new BDTodaslasPuntuaciones(nombreJuego);
+   ArrayList<Jugador> listadoJugadores = puntajes.creaObjetos();
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +21,16 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Puntos</th>
+            </tr>
+                    <%for(int i=0; i<listadoJugadores.size(); i++){%>
+                <td><%= listadoJugadores.get(i).getNombre()%></td>
+                <td><%= listadoJugadores.get(i).getPuntos()%></td>
+            </tr>
+                    <%}%>  
+        </table>          
     </body>
 </html>

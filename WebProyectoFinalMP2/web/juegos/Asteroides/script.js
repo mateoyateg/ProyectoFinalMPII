@@ -19,8 +19,7 @@ $(document).ready(inicio);
 $(document).keydown(capturaTeclado);
 
 function inicio(){
-        var nombreJugador = prompt("Ingrese su nombre de jugador: ");
-        document.getElementById("nombreJugador").value = nombreJugador;
+        
 	var lienzo = $("#lienzo")[0];
 	var contexto = lienzo.getContext("2d");
 	var buffer = document.createElement("canvas");
@@ -38,6 +37,8 @@ function inicio(){
 	contexto.drawImage(buffer, 0, 0);
 	$('#brisa')[0].play();
 	$("button").click(function(){	
+                var nombreJugador = prompt("Ingrese su nombre de jugador: ");
+                document.getElementById("nombreJugador").value = nombreJugador;
 		x = 350;
 		y = 250;	
 		vida = 100;
@@ -67,7 +68,7 @@ function capturaTeclado(event){
 
 function Nave(){
 	this.img = [$("#ship")[0],$("#explosion")[0]];
-	this.msgs = ["verifca el frente", "cuidado al lado", "mejor moverse", 
+	this.msgs = ["verifica el frente", "cuidado al lado", "mejor moverse", 
 	             "ojo alrededor", "cuidado con el asteroide", "evita los asteroides",
 	             "acelera","no puedes colisionar mas","debes mantener la vida",
 	             "atiende los controles"];

@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -36,7 +37,6 @@ public class recibeDatos extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         BDModificaPuntuaciones modificar;
-        BDTodaslasPuntuaciones puntajes;
         
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
@@ -50,10 +50,6 @@ public class recibeDatos extends HttpServlet {
             modificar.insertaDatos(nombreJugador, puntos);
             
             //Crear página con todos los puntajes
-            
-            puntajes = new BDTodaslasPuntuaciones(nombreJuego);
-            puntajes.creaObjetos();
-            
       
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -68,7 +64,11 @@ public class recibeDatos extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
             
-            //response.sendRedirect("../puntuaciones.jsp");
+            Cookie cokNombreJuego = new Cookie("nombreJuego", nombreJuego);
+            cokNombreJuego.setPath("puntuaciones.jsp");
+            cokNombreJuego.setMaxAge(2);
+            response.addCookie(cokNombreJuego);
+            response.sendRedirect("puntuaciones.jsp");
             
         } catch (Exception e){
             
