@@ -3,9 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/I:/Proyectos%20GIT/ProyectoFinalMPII/WebProyectoFinalMP2/src/java/modelo/InfoJuegos.java</file>
-            <file>file:/I:/Proyectos%20GIT/ProyectoFinalMPII/WebProyectoFinalMP2/web/index.jsp</file>
-            <file>file:/I:/Proyectos%20GIT/ProyectoFinalMPII/WebProyectoFinalMP2/src/java/modelo/ConsultarJuegos.java</file>
+            <file>file:/I:/Proyectos%20GIT/ProyectoFinalMPII/WebProyectoFinalMP2/web/juegos/LaLlorona/js/script.js</file>
+            <file>file:/I:/Proyectos%20GIT/ProyectoFinalMPII/WebProyectoFinalMP2/web/juegos/MarioJumper/js/js_j1/fin.js</file>
+            <file>file:/I:/Proyectos%20GIT/ProyectoFinalMPII/WebProyectoFinalMP2/web/juegos/MarioJumper/js/js_j1/principal.js</file>
+            <file>file:/I:/Proyectos%20GIT/ProyectoFinalMPII/WebProyectoFinalMP2/web/juegos/MarioJumper/js/js_j1/phaser.js</file>
+            <file>file:/I:/Proyectos%20GIT/ProyectoFinalMPII/WebProyectoFinalMP2/web/juegos/MarioJumper/js/js_j1/inicio.js</file>
+            <file>file:/I:/Proyectos%20GIT/ProyectoFinalMPII/WebProyectoFinalMP2/web/juegos/MarioJumper/js/js_j1/juego.js</file>
         </group>
     </open-files>
 </project-private>

@@ -1,5 +1,6 @@
 var boton;
 var Inicio = {
+    
     preload: function(){
         juego.stage.backgroundColor = '#FFFFFF';
         juego.load.image('boton', 'img/img_j1/boton.png');
@@ -22,7 +23,8 @@ var Inicio = {
     },
     
     iniciarJuego: function(){
-        
+        var nombreJugador = prompt("Ingrese su nombre de jugador: ");
+        document.getElementById("nombreJugador").value = nombreJugador;
         this.state.start('Juego');
     }
 };

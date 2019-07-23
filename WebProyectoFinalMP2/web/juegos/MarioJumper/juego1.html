@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Saltarin</title>
-    <link rel="stylesheet" href="css/estilo_j1/estilo.css">
-    <script src="js/js_j1/phaser.js"></script>
-    <script src="js/js_j1/inicio.js"></script>
-    <script src="js/js_j1/juego.js"></script>
-    <script src="js/js_j1/fin.js"></script>
-    <script src="js/js_j1/principal.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Saltarin</title>
+        <link rel="stylesheet" href="css/estilo_j1/estilo.css">
+        <script src="js/js_j1/phaser.js"></script>
+        <script src="js/js_j1/inicio.js"></script>
+        <script src="js/js_j1/juego.js"></script>
+        <script src="js/js_j1/fin.js"></script>
+        <script src="js/js_j1/principal.js"></script>
+    </head>
+    <body>
 
-    <table id="banner">
-        <tr>
-            <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos</td>
-            <td>
-                <input type="Submit" class="BotBanner" form="formulariollorona" value="Puntuaciones">
-            </td>
-            <td> <button class="BotBanner" onclick="location.href = '../../index.jsp'"> Volver al inicio</button></td>
-        </tr>
-    </table>
-    
-    <div id="bloque_juego"></div>
-</body>
+        <table id="banner">
+            <tr>
+                <td style="padding-left: 300px; padding-right: 300px;">La Universidad de los juegos</td>
+                <td>
+                    <input type="Submit" class="BotBanner" form="formulariomariojumper" value="Puntuaciones">
+                </td>
+                <td> <button class="BotBanner" onclick="location.href = '../../index.jsp'"> Volver al inicio</button></td>
+            </tr>
+        </table>
+
+        <div id="bloque_juego"></div>
+        <form id="formulariomariojumper" action="../../recibeDatos" name="datosPartida">
+            <input type="hidden" value="MarioJumper" id="nombreJuego" name="nombreJuego">
+            <input type="hidden" value="" id="nombreJugador" name="nombreJugador">
+            <input type="hidden" value="" name="puntos" id="puntos">
+        </form>
+    </body>
 </html>
