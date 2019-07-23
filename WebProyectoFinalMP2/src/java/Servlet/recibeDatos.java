@@ -55,6 +55,7 @@ public class recibeDatos extends HttpServlet {
             cokNombreJuego.setMaxAge(2);
             response.addCookie(cokNombreJuego);
             response.sendRedirect("puntuaciones.jsp");
+            System.out.println("ME VOY1");
             
         } catch (Exception e){
             

@@ -1,3 +1,5 @@
+var enviar=true;
+
 document.addEventListener('keydown', function (evento) {
     if (evento.keyCode == 32) {
         console.log("salta");
@@ -214,8 +216,11 @@ function puntuacion() {
             if (nivel.muerto == true) {
         ctx.font = "60px Courier New";
         ctx.fillText('JUEGO TERMINADO ', 50, 150);
-        document.getElementById("puntos").value = nivel.marcador;
-        document.datosPartida.submit();
+        if(enviar==true){
+            document.getElementById("puntos").value = nivel.marcador;
+            document.datosPartida.submit();
+            enviar = false;
+        }
 
     }
 }
